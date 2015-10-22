@@ -1,0 +1,246 @@
+table tr:nth-child(even) td:after
+{
+    content: "";
+    background-color: #FFF7E0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+table tr:nth-child(odd) td:after
+{
+    content: "";
+    background-color:#3FC6FF;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+table td, table thead
+{
+    position: relative;
+    padding: 5px;
+}
+
+.table2
+{
+    position: relative;
+    margin: 50px;
+    overflow: hidden;
+    border-collapse: collapse;
+    z-index: 0;
+    width: 1000px;
+}
+
+tbody tr:hover
+{
+    background-color: #30E819;
+}
+
+td:after
+{
+    content:'';
+    position: absolute;
+    background: blue;
+}
+
+td:before
+{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top:-800px;
+    bottom:-1000px;
+}
+
+td:hover
+{
+  background: #AA40E8;
+}
+
+td:hover:after
+{
+  background: black;
+}
+
+td:hover:before
+{
+  background: #30E819;
+}
+
+thead tr
+{
+  background-color: #30E819 !important;
+}
+
+body
+{
+  font: .8em Arial,Helvetica,sans-serif;
+  background: #AA40E8;
+}
+
+th,
+td
+{
+    border: 2px solid #000000;
+    padding:10px;
+    text-align: center;
+}
+
+#bodycontent
+{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-width: 33px;
+    min-height: 33px;
+}
+
+#content
+{
+    position: relative;
+    float: left;
+    width:1100px;
+    background: #FFF7E0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin:50px;
+    padding-bottom: 50px;
+    height: 1150px;
+}
+
+.checkbox1
+{
+    width: 20px;
+    height:20px;
+    border: 1px;
+    color:#00838F;
+    background-color:#81D4FA;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 5px 4px 3px 5px;
+}
+
+#checkbox2
+{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+input[type="text"]
+{
+	width: 300px;
+    height:40px;
+    border: 1px solid #000000;
+    background: transparent;
+    border-radius: 3px;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 2px;
+    color: black;
+}
+
+input[type="text"]::-moz-placeholder
+{
+    color: #00838F;
+}
+
+.table1
+{
+	position: relative;
+	margin: 50px;
+}
+
+#sendToTel input[type="submit"]
+{
+    display: none;
+}
+
+#sendToTel:valid input[type="submit"]
+{
+    display: inline;
+}
+input[value='Сахалин'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Москва'])
+{
+    display: none;
+}
+
+input[value='Ашхабат'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Москва'])
+{
+    display: none;
+}
+
+input[value='Москва'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Москва'])
+{
+    display: none;
+}
+
+input[value='Екатеринбург'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Екатеринбург'])
+{
+    display: none;
+}
+
+input[value='Нью-Йорк'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Нью-Йорк'])
+{
+    display: none;
+}
+
+input[value='Сочи'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Сочи'])
+{
+    display: none;
+}
+
+input[value='Берлин'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Берлин'])
+{
+    display: none;
+}
+
+input[value='Краснодар'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Краснодар'])
+{
+    display: none;
+}
+
+#fromSearch[value='Таллин'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Таллин'])
+{
+    display: none;
+}
+
+#departure:not(:checked) ~ table tr:not(:only-child):not(.trForm)[data-type='departure']
+{
+    display: none;
+}
+
+#arrival:not(:checked) ~ table tr:not(:only-child):not(.trForm)[data-type='arrival']
+{
+    display: none;
+}
+
+#dTerm:not(:checked) ~ table tr:not(:only-child):not(.trForm)[data-term='D']
+{
+    display: none;
+}
+
+#eTerm:not(:checked) ~ table tr:not(:only-child):not(.trForm)[data-term='E']
+{
+    display: none;
+}
+
+#fTerm:not(:checked) ~ table tr:not(:only-child):not(.trForm)[data-term='F']
+{
+    display: none;
+}
+#cTerm:not(:checked) ~ table tr:not(:only-child):not(.trForm)[data-term='C']
+{
+    display: none;
+}
