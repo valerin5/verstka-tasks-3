@@ -43,26 +43,18 @@ tbody tr:hover
     background-color: #30e819;
 }
 
-td:after
-{
-    content:'';
-    position: absolute;
-    background: #0000ff;
-}
-
 td:hover::before
 {
-    content:'';
+    content:"";
     position: absolute;
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.3;
     left: 0;
     right: 0;
-    background-color: #30e819;
-    top: -80000px;
-    height: 500000px;
+    background-color: #aa40e8;
+    top: -800px;
+    height: 5000px;
 }
-
 
 thead tr
 {
@@ -192,11 +184,6 @@ input[value='Берлин'] ~ table tr:not(:only-child):not(.trForm):not([data-f
 }
 
 input[value='Краснодар'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Краснодар'])
-{
-    display: none;
-}
-
-#fromSearch[value='Таллин'] ~ table tr:not(:only-child):not(.trForm):not([data-from='Таллин'])
 {
     display: none;
 }
