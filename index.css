@@ -50,31 +50,19 @@ td:after
     background: #0000ff;
 }
 
-td:before
+td:hover::before
 {
     content:'';
     position: absolute;
-    z-index: -1;
+    pointer-events: none;
+    opacity: 0.5;
     left: 0;
     right: 0;
-    top: -800px;
-    bottom: -200%;
+    background-color: #30e819;
+    top: -80000px;
+    height: 500000px;
 }
 
-td:hover
-{
-  background: #aa40e8;
-}
-
-td:hover:after
-{
-  background: #000;
-}
-
-td:hover:before
-{
-  background: #30e819;
-}
 
 thead tr
 {
@@ -124,9 +112,6 @@ td
     border: 1px;
     color:#00838f;
     background-color:#81d4fA;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    -o-appearance:none;
     border-radius: 3px;
     border: 1px solid;
     padding: 5px 4px 3px 5px;
